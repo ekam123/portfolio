@@ -689,6 +689,13 @@ body:not(.user-is-tabbing) a:focus {
     border-radius: 2px;
 }
 
+.writing__draft-note {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--body-muted);
+    margin: .6rem 0 0;
+}
+
 .writing__chapters-heading {
     font-size: var(--font-size-medium);
     margin-bottom: var(--gutter-small);
