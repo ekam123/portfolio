@@ -32,6 +32,20 @@ let alterStyles = (isBackToTopRendered) => {
     : "scale(0)";
 };
 
+/* -----------------------------------------
+  Re-apply the URL's #anchor scroll after the page has fully
+  loaded (fonts, hero background image). The browser's automatic
+  scroll-to-hash on navigation happens before those finish loading,
+  so a shifting layout can leave the page stranded above the target.
+ ---------------------------------------- */
+
+window.addEventListener("load", () => {
+  if (location.hash) {
+    const target = document.querySelector(location.hash);
+    if (target) target.scrollIntoView();
+  }
+});
+
 window.addEventListener("scroll", () => {
   if (window.scrollY > 700) {
     isBackToTopRendered = true;

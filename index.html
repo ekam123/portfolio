@@ -1,19 +1,3 @@
-<!-- 
-  Hello 😊.
-
-  This template is designed and developed by Nisar Hassan Naqvi
-  for anyone to use for free or customize the way they like.
-
-  Github Repo: https://github.com/nisarhassan12/portfolio-template/
-  My Website: https://nisar.dev
-
-  For business & inquires, contact me => syednisarhassan12@gmail.com
--->
-
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
--->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,13 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
-  <!-- Put your site title here -->
   <title>
     Ekam Singh
   </title>
 
   <meta name="description" content="A beginning is the time for taking the most delicate care that the balances are correct.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
   <meta name="keywords" content="Ekam Singh Dhaliwal, software developer, ios, android, unreal engine, c++" />
   <link rel="stylesheet" href="index.css" />
 </head>
@@ -41,13 +23,13 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-          <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
+          <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="writing.html" class="nav__link">Writing</a></li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+            <a href="index.html" class="nav__link nav__link--active" aria-current="page">About</a>
           </li>
           <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+            <a href="contact.html" class="nav__link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -55,133 +37,40 @@
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
           <span>Ekam Singh Dhaliwal</span>
         </h1>
-        <!-- Put a small paragraph about yourself -->
         <p>Software Developer</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+        <a href="contact.html" class="btn btn--accent">Get in touch</a>
       </div>
     </div>
   </header>
 
   <main role="main">
 
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
-      <div class="row">
-        <h2>Projects</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Sundar Gutka (Damdami Taksal)</h3>
-              <p>
-                A sikh religious prayers mobile app.
-              </p>
-              <ul class="work__list">
-                <li>iOS</li>
-                <li>Objective-C</li>
-                <li>Swift</li>
-                <li>SwiftUI</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://apps.apple.com/ca/app/sundar-gutka-damdami-taksal/id796246528" target="_blank" class="link__text">
-                  Visit App Store <span>&rarr;</span>
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/sundar_gutka.webp" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Tanks</h3>
-              <p>
-                Local turn based 3D game, up to five players. Take turns trying to destory the other tanks. Last one remaining wins. 
-              </p>
-              <ul class="work__list">
-                <li>Unreal Engine</li>
-                <li>C++</li>
-                <li>Visual Blueprint Scripting</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://github.com/ekam123/Tanks">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/tanks_screenshot.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <!-- <div class="work__box">
-            <div class="work__text">
-              <h3>Celebrity Lookalike</h3>
-              <p>
-                Take a selfie and return a match for your closest celebrity lookalike. 
-              </p>
-              <ul class="work__list">
-                <li>iOS</li>
-                <li>PyTorch</li>
-                <li>Flask</li>
-                <li>fastai</li>
-                <li>Vision/CoreML</li>
-                <li>Docker</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://github.com/ekam123/Faceoff">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-                <a href="https://github.com/ekam123/MLProduction">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
-            </div>
-          </div> -->
-        </div>
-      </div>
-    </section>
-
     <!-- ***** About ***** -->
 
     <section class="about" id="about">
       <div class="row">
-        <h2>About Me</h2>
+        <h2 class="section-heading">About Me</h2>
         <div class="about__content">
           <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
             <p>
-              I'm a software developer from Vancouver, Canada currently working in mobile development.
-              I have a background in software development and molecular biology and biochemistry. 
-              I love learning new technologies, especially when it's interdisciplinary. 
-              I'm currently building a VR game as a fun side project. 
+              I'm a software engineer from Vancouver, Canada with 7+ years of experience building production iOS,
+              Android, React Native, and backend systems, spanning native C++, API development, database
+              architecture, ML model deployment and serving infrastructure, and performance optimization. I also have a
+              background in molecular biology and biochemistry, and I thrive at the intersection of new technologies and disciplines.
             </p>
             <p>
-              The following topics really grab my attention:
+              Other topics that grab my attention:
               <li>World Building and Storytelling</li>
-              <li>Future applications combining synthetic biology and robotics</li>
+              <li>Synthetic biology merged with embedded programming</li>
               <li>Socio-Ecological Design</li>
-              <li>Baseball</li>
-              <li>History</li>
-              <li>Maximizing athletic development</li>
+              <li>Everything baseball</li>
+              <li>World history</li>
             </p>
           </div>
 
           <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
             <img class="about__photo" src="./images/profile.jpg" alt="" width="80%" height="80%"/>
           </div>
         </div>
@@ -189,74 +78,10 @@
     </section>
   </main>
 
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <!-- <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
-        </p> -->
-        <!-- Replace the email with yours -->
-        <ul class="footer__social-links">
-          <li class="footer__social-link-item">
-            <a href="https://twitter.com/es_ekam/" title="Link to Twitter Profile">
-              <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-            </a>
-          </li>
-          <li class="footer__social-link-item">
-            <a href="https://github.com/ekam123/" title="Link to Github Profile">
-              <img src="./images/github.svg" class="footer__social-image" alt="Github">
-            </a>
-          </li>
-          <li class="footer__social-link-item">
-            <a href="https://www.linkedin.com/in/ekam123/">
-              <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-            </a>
-          </li>
-        </ul>
-        <a href="mailto:ekamsinghdhaliwal@mail.com" class="btn">Connect</a>
-      </div>
-    </div>
-  </section>
-
   <!-- ***** Footer ***** -->
 
   <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <!-- <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul> -->
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
-    </div>
+    <div class="row"></div>
   </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
